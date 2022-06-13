@@ -1,0 +1,51 @@
+
+.type{
+    width: 100%;
+    align-content: center;
+    /* background-color: #282c34; */
+    background-color: black;
+    text-align: center;
+    /* font-family: "Roboto Slab ExtraLight"; */
+    font-family: 'Pacifico', cursive !important;
+}
+
+.Cards{
+    /* background-color: grey; */
+    background-color: #d65cad;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    position: center;
+    /* child-align: middle; */
+}
+
+.samp{
+    border-radius: 50em!important;
+    border: 2px solid grey;
+}
+
+.page-footer{
+    /* background-color: #282c34; */
+    background-color: black;
+}
+
+.greet{
+    text-align: center;
+    /* background-color: #434445; */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    /* font-family:Pacifico,cursive !important; */
+}
+
+.display-3{
+    font-family: 'Fascinate', cursive !important;
+}
+
+.display-5{
+    font-family:Pacifico,cursive !important;
+}
+
+.flex-wrap{
+    padding-bottom: 20px;
+}

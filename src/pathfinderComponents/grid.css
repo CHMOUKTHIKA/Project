@@ -1,0 +1,14 @@
+
+.Grid{
+    font-size: 0;
+}
+div{
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+body{
+    background-color: #d65cad !important;
+    /* background-color: rgb(251, 219, 244) !important; */
+}
