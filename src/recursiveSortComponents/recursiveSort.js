@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Rect from "./rect";
 import Rects from "./rects";
+import SortName from "./SortName";
 import mergeSort from '../algorithms/mergeSort';
 import heapSort from "../algorithms/heapSort";
 import {quickSortRecursive} from "../algorithms/quickSortRecursive";
@@ -43,16 +44,58 @@ class RecursiveSort extends Component {
                     onAlgoChanged={this.handleAlgoChanged}
                     onSpeedChange={this.handleSpeedChanged}
                 />
+                {/* <div>
+                    onVisualize={this.handleName}
+                </div> */}
+                
                 <div className=' justify-content-center'>
                     <Rects
                         rects={this.state.rects}
                     />
 
                 </div>
+                <div>
+                    {/* x={this.state.algo} */}
+                    <SortName
+                        sorts={this.state.algo}
+                    />
+                </div>
             </React.Fragment>
         );
     }
 
+    /*    */
+
+    handleName = () => {
+
+        this.setState({isRunning: true});
+        let steps;
+        let rects2;
+        switch (this.state.algo) {
+
+            case 0:
+                // "MergeSort"
+                this.render(
+                    <p>MergeSort</p>
+                )
+                break;
+            case 1:
+                rects2 = this.state.rects.slice();
+                steps = heapSort(rects2);
+                this.handleHeap(steps);
+                break;
+            case 2:
+                rects2 = this.state.rects.slice();
+                steps = quickSortRecursive(rects2);
+                this.handleQuick(steps);
+                break;
+            default:
+        }
+
+
+    }
+    
+    /*  */
     handleRandomize = () => {
         const rect = getInitialRects(this.state.count);
         this.setState({rects: rect});
@@ -62,6 +105,7 @@ class RecursiveSort extends Component {
         for (let i = 0; i < rects.length; i++) {
             const rect = {...rects[i], isSorted: false, isSorting: false}
             rects[i] = rect;
+            // alert(rects[i]);
         }
         this.setState({rects});
     }

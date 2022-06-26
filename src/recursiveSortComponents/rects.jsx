@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import Rect from "./rect";
+import SimpleSelect from "./simpleSelect";
+import onAlgoChanged from "./menu.jsx";
 
 class Rects extends Component {
     render() {
@@ -18,6 +20,8 @@ class Rects extends Component {
                         />
                     );
                 } )}
+               
+               
             </div>
         );
     }

@@ -5,6 +5,7 @@ import {bubbleSort,selectionSort,insertionSort} from "../algorithms/sortingAlgor
 import {quickSort} from "../algorithms/quickSort";
 import Navbar from "./navbar";
 import Menu from "./menu";
+import SortName1 from "./SortName1";
 
 class Sort extends Component {
   state = {
@@ -40,18 +41,26 @@ class Sort extends Component {
                 onAlgoChanged={this.handleAlgoChanged}
                 onSpeedChange={this.handleSpeedChanged}
             />
+            
             <div className=' justify-content-center'>
 
                 <Rects
                     speed={this.state.speed}
                     rects={this.state.rects}
                 />
+                <SortName1
+                        sorts={this.state.algo1}
+                    />
                 { this.state.doubles && <hr style={{width:"90%"}}/>}
                 { this.state.doubles &&
-                <Rects
+                <div><Rects
                     rects={this.state.rects2}
-                /> }
+                /> 
+                <SortName1
+                sorts={this.state.algo2}
+            /></div>}
             </div>
+        
         </React.Fragment>
     );
   }

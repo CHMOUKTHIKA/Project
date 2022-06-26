@@ -16,7 +16,7 @@ class Menu extends Component {
                     disabled={this.props.disable}
                     style={this.isClickable()}
                 >
-                    Randomize
+                   Generate New Array
                 </button>
 
                 <RangeSlider

@@ -16,15 +16,24 @@ const CSlider = withStyles({
         height: 3,
         width: 400,
         padding: "13px 0",
+        color:"blue",
+        // backgroundColor:"red",
     },
     track: {
         height: 4,
         borderRadius: 2,
+        backgroundColor: "blue",
+        color:"black",
     },
     thumb: {
-        backgroundColor: "#fff",
+        backgroundColor: "black",
         //color: "#fff",
+        color:"blue",
     },
+    // mark:{
+    //     backgroundColor: "green",
+    //     color:"black",
+    // }
 })(Slider);
 
 function valuetext(value) {
@@ -49,15 +58,17 @@ export default function RangeSlider(props) {
     },[props.lower,props.upper])
     return (
         <div className={classes.root}>
+
             <CSlider
+                className="drop1"
                 disabled
                 value={value}
                 onChange={handleChange}
                 onChangeCommitted={handleCommit}
-                valueLabelDisplay="auto"
+                // valueLabelDisplay="auto"
                 aria-labelledby="range-slider"
                 getAriaValueText={valuetext}
-                // valueLabelDisplay="on"
+                valueLabelDisplay="on"
                 max={props.max}
             />
             <Typography id="range-slider" gutterBottom>

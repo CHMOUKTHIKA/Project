@@ -4,6 +4,7 @@ class Rect extends Component {
 
     render() {
         return (
+
             <div
                 className='rect'
                 style={{height:this.props.rect.width,
@@ -13,7 +14,10 @@ class Rect extends Component {
                     'vertical-align': 'middle'
                 }}
             >
-                
+             <div class="num" >
+            <div>{this.props.rect.width}</div>
+
+                </div>   
             </div>
         );
     }

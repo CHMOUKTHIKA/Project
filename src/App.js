@@ -11,8 +11,6 @@ import RecursiveSort from "./recursiveSortComponents/recursiveSort";
 
 import Graph from "./Graph/graph";
 
-
-
 class App extends Component {
 
     constructor() {

@@ -7,11 +7,10 @@ class Guess extends Component {
             <div >
 
                 <p>
-
-                    {/* <button className="btn btn-secondary btn-lg" type="button" data-toggle="collapse"
+                    <button className="btn btn-secondary btn-lg" type="button" data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                         Toggle Range
-                    </button> */}
+                    </button>
                 </p>
                 <div className="collapse" id="collapseExample">
                     <div className="card card-body">

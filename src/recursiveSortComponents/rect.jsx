@@ -14,7 +14,10 @@ class Rect extends Component {
 
                 }}
             >
-                
+                <div class="num" >
+            <div>{this.props.rect.width}</div>
+
+                </div>  
             </div>
         );
     }
@@ -28,7 +31,7 @@ class Rect extends Component {
         } else if(this.props.rect.isRight){
             return "purple";
         }else{
-            return "#ADD8E6";
+            return "black";
         }
     }
     checkBorder = () =>{
