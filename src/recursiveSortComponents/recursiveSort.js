@@ -44,9 +44,6 @@ class RecursiveSort extends Component {
                     onAlgoChanged={this.handleAlgoChanged}
                     onSpeedChange={this.handleSpeedChanged}
                 />
-                {/* <div>
-                    onVisualize={this.handleName}
-                </div> */}
                 
                 <div className=' justify-content-center'>
                     <Rects

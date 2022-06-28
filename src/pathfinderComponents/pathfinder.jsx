@@ -14,7 +14,7 @@ class Pathfinder extends Component {
             grid:[],
             mouseIsPressed:false,
             algorithms:[
-                "Dijsktra","BFS","DFS"
+                "BFS","DFS"
             ],
             algo:0,
            mazes:[ "Recursive"],
@@ -154,10 +154,10 @@ class Pathfinder extends Component {
         const finishNode = grid[this.state.endNode.row][this.state.endNode.col];
         let visitedNodesInOrder;
         switch (this.state.algo){
+            // case 0:
+            //     visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
+            //     break;
             case 0:
-                visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
-                break;
-            case 1:
                 visitedNodesInOrder = bfsdfs(grid, startNode, finishNode,"bfs");
                 break;
             default:

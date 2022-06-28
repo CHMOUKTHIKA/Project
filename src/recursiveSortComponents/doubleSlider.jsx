@@ -46,7 +46,7 @@ export default function RangeSlider(props) {
 
     return (
         <div className={classes.root}>
-            <CSlider
+            {/* <CSlider
                 disabled={props.disable}
                 value={value}
                 onChange={handleChange}
@@ -58,7 +58,7 @@ export default function RangeSlider(props) {
             />
             <Typography id="range-slider" gutterBottom>
                 Value range
-            </Typography>
+            </Typography> */}
         </div>
     );
 }
