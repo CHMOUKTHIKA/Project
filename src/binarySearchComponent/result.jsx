@@ -6,7 +6,7 @@ class Result extends Component {
     render() {
         return (
             <div>
-                <span className='display-3'>
+                <span className='display-3' style={{fontSize: "10px"}}>
                     {this.props.keyval == -1 ? "The number is not found":"Your number is found at " + this.props.keyval}
                 </span> <br />
                 <button

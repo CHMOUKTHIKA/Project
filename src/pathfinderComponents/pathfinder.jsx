@@ -136,7 +136,7 @@ class Pathfinder extends Component {
                 document.getElementById(`node-${i}-${j}`).className = "node";
             }
         }*/
-        this.visualizeDijkstra();
+        this.visualizePath();
         /*for(let i = 0;i<this.state.row;i++){
             for(let j = 0; j<this.state.col;j++){
                 setTimeout(()=>{
@@ -148,7 +148,7 @@ class Pathfinder extends Component {
         }*/
     }
 
-    visualizeDijkstra() {
+    visualizePath() {
         const {grid} = this.state;
         const startNode = grid[this.state.startNode.row][this.state.startNode.col];
         const finishNode = grid[this.state.endNode.row][this.state.endNode.col];
@@ -164,9 +164,9 @@ class Pathfinder extends Component {
                 visitedNodesInOrder = bfsdfs(grid, startNode, finishNode,"dfs");
         }
         const nodesInShortestPathOrder = getNodesInShortestPathOrder(finishNode);
-        this.animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder);
+        this.animatePath(visitedNodesInOrder, nodesInShortestPathOrder);
     }
-    async animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder) {
+    async animatePath(visitedNodesInOrder, nodesInShortestPathOrder) {
         for (let i = 0; i <= visitedNodesInOrder.length; i++) {
 
             if (i === visitedNodesInOrder.length) {
