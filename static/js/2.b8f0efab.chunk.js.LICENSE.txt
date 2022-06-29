@@ -5,10 +5,19 @@ object-assign
 */
 
 /*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <http://feross.org>
+ * @license  MIT
+ */
+
+/*!
  * github-buttons v2.14.0
  * (c) 2020 なつき
  * @license BSD-2-Clause
  */
+
+/*! https://mths.be/punycode v1.4.1 by @mathias */
 
 /**
  * A better abstraction over CSS.
@@ -87,3 +96,9 @@ object-assign
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+
+//!! Deliberately using an API that's deprecated in node.js because
+
+//!! Discussion: github.com/node-browser-compat/atob/pull/9
+
+//!! this file is for browsers and we expect them to cope with it.
