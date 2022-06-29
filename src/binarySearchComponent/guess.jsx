@@ -7,10 +7,12 @@ class Guess extends Component {
             <div >
 
                 <p>
-                    <button className="btn btn-secondary btn-lg" type="button" data-toggle="collapse"
+                    {/* <div className="btn btn-secondary btn-lg"  data-toggle="collapse"
                             data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Toggle Range
-                    </button>
+                         
+                                upper={this.props.keyval}
+                              
+                    </div> */}
                 </p>
                 <div className="collapse" id="collapseExample">
                     <div className="card card-body">
@@ -24,17 +26,17 @@ class Guess extends Component {
                     </div>
                 </div>
 
-               <h1>
+               {/* <h1>
                     Is you number greater than {this.getMid()}?
-                </h1> <br />
-                <button
+                </h1> <br /> */}
+                {/* <button
                     className='btn btn-lg btn-success m-2'
                     onClick={this.props.yesButton}
                 >Yes</button>
                 <button
                     className='btn btn-lg btn-danger m-2'
                     onClick={this.props.noButton}
-                >No</button> <br/>
+                >No</button> <br/> */}
             </div>
         );
     }

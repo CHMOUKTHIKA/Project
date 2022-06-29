@@ -5,7 +5,8 @@ import Pathfinder from "./pathfinderComponents/pathfinder";
 import Home from "./homeComponents/home";
 import Seive from "./primeComponents/seive";
 import Sort from "./sortComponents/sort";
-import BinarySearch from "./binarySearchComponent/binarySearch";
+import BinarySearch from './binarySearchComponent/binarySearch'
+// import BinaryNew from "./binarySearchComponent/binaryNew";
 import RecursiveSort from "./recursiveSortComponents/recursiveSort";
 
 
@@ -28,6 +29,7 @@ class App extends Component {
                     <Route path='/prime' component={Seive}/>
                     <Route path='/sort' component={Sort}/>
                     <Route path='/binarysearch' component={BinarySearch}/>
+                    {/* <Route path='/binarysearch' component={BinaryNew}/> */}
                     <Route path='/recursivesort' component={RecursiveSort}/>
                     <Route path='/graph' component={Graph}/>
                     <Route path='/' component={Home}/>

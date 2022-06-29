@@ -13,11 +13,11 @@ class Menu extends Component {
                     onAlgoChanged={this.props.onMazeChanged}
                     items={this.props.mazes}
                 />
-                <button
+                {/* <button
                     className='btn btn-success btn-secondary m-2'
                     onClick={this.props.onCreateMaze}>
                     Create Maze
-                </button>
+                </button> */}
                 <button
                     onClick={this.props.onVisualize}
                     className="btn btn-primary  m-2"

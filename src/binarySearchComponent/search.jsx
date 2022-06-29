@@ -15,10 +15,11 @@ class Search extends Component {
                     max={this.props.max}
                 />
                 }
-                {this.props.upper === this.props.lower &&
+                {this.props.phase === 1 &&
                    <Result
                        res={this.props.upper}
                        onRestart={this.props.onRestart}
+                       keyval={this.props.keyval}
                    />
                 }
             </div>

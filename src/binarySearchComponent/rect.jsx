@@ -1,0 +1,58 @@
+import React, {Component} from 'react';
+// import './style.css';
+class Rect extends Component {
+
+    render() {
+        return (
+            <div
+                className='rect'
+                style={{height:this.props.rect.width,
+                    border: this.checkBorder(),
+                    background:this.checkColor(),
+                    margin:this.props.marg
+
+
+                }}
+            >
+                <div class="num" >
+            <div>{this.props.rect.width}</div>
+
+                </div>  
+            </div>
+        );
+    }
+    checkColor = () => {
+        if( this.props.rect.isMid ){
+            return "purple";
+        } else if( this.props.rect.isFound ){
+            return "green";
+        } else if( this.props.rect.isNotFound ){
+            return "red";
+        }
+        // } else if(this.props.rect.isRight){
+        //     return "purple";
+        // }else{
+        //     return "black";
+        // }
+        // if( this.props.rect.isSorted ){
+        //     return "green";
+        // } else if( this.props.rect.isSorting ){
+        //     return "orange";
+        // } else if( this.props.rect.isLeft ){
+        //     return "red";
+        // } else if(this.props.rect.isRight){
+        //     return "purple";
+        // }else{
+        //     return "black";
+        // }
+    }
+    checkBorder = () =>{
+        if( this.props.rect.isRange ){
+            return "0px solid black";
+        } else{
+            return "0px"
+        }
+    }
+}
+
+export default Rect;

@@ -10,17 +10,20 @@ class EntryPoint extends Component {
     render() {
         return (
             <div>
+                <h1>
+                   <b>Enter a number to search</b> 
+                </h1>
                 <TextField
                     error={this.state.error}
                     id="standard-error-helper-text"
-                    label="Upper Number"
+                    // label="Upper Number"
                     type="number"
                     variant="outlined"
                     onChange={this.getData}
                     style={{color:"white"}}
                 /> <br /><br />
                 <h1>
-                    Guess a number between 0 and {this.props.upper}
+                    Searching  number : {this.props.upper}
                 </h1>
                 <br />
                 <button
@@ -28,7 +31,7 @@ class EntryPoint extends Component {
                     onClick={this.props.startGame}
                     style={{backgroundColor: "#0066ff", color:"white"}}
                 >
-                    Start the game
+                    Start Search
                 </button>
             </div>
         );
