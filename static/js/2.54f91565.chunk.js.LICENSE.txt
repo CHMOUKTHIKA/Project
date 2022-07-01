@@ -11,12 +11,6 @@ object-assign
  * @license  MIT
  */
 
-/*!
- * github-buttons v2.14.0
- * (c) 2020 なつき
- * @license BSD-2-Clause
- */
-
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 
 /**
